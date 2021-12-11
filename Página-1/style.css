@@ -1,0 +1,102 @@
+body{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background-color: #1D2C34;
+
+}
+
+header{
+
+height: 70px;
+font-size: 1.3rem;
+position: sticky;
+top: 0px;
+background-color: #1970E8;
+
+
+}
+#slogan {
+list-style-image: url(./image/baleia-azul.png);
+	position: fixed;
+	left: 10px;
+	top: 1px;
+	
+}
+#slogan a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+nav ul{
+display: inline;
+position: absolute;
+bottom: 1px;
+right: 17px;
+}
+nav ul li{
+display: inline-block;
+position: relative;
+top: 11px;
+padding: 15px;
+color: #4091FF;
+
+}
+nav ul li:hover{
+	color: #fff;
+}
+#conteudo{
+	border: 1px solid #fff;
+
+	height: 500px;
+	margin: 70px 100px 30px 100px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+#escrever{
+	position: relative;
+	top: 80px;
+	left: 45%;
+	transform: translate(-40%);
+}
+#escrever{
+	width: 250px;
+	height: 30px;
+	border: solid 2px #4091FF;
+}
+#claro{
+	background-color: #7BD2FF;
+	width: 60px;
+	height: 23px;
+	margin: auto;
+	position: absolute;
+	top: 24px;
+	right: 448px;
+	font-size: 1.0rem;
+	font-weight: bold;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+}
+#escuro{
+	background-color: #1D2C34;
+	width: 60px;
+	height: 23px;
+	margin: auto;
+	position: absolute;
+	top: 24px;
+	right: 398px;
+	font-size: 1.0rem;
+	font-weight: bold;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+}
+#claro:hover{
+	box-shadow: -1px -1px 2px #81DCDC ;
+}
+#escuro:hover{
+	box-shadow: 1px -1px 2px black ;
+}

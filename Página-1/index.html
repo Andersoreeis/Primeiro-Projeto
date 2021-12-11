@@ -1,0 +1,79 @@
+
+	<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<style>
+    		*{
+    			font-family: sans-serif;
+    		}
+    	
+    	</style>
+		<title>JS</title>
+		<link href="style.css"rel="stylesheet">
+				
+	</head>
+	<body >
+		<div id="cabeçalho">
+		<header>
+			<div id="claro"onclick="claro()" >Claro</div>
+			<div id="escuro" onclick="escuro() ">Escuro</div>
+			<input type="text" name="escrito" id="escrever" oninput="escrever() "placeholder="Digite o texto aqui">
+			<nav>
+				<ul>
+					<li id="slogan"><a href="#">Slogan</a></li>
+					<li id="lp" onclick="cabeçalho()">Home</li>
+					<li>Login</li>
+					<li>Cadastrar</li>
+			</nav>
+		</header>
+		<div id="conteudo">
+			<p id="paragrafo1" onmouseover="cor(this)" onmouseout="saidacor(this)" ></p>
+			<h1 id="paragrafo2" ></h1>
+			<img src="./image/acessa.png" id="image">
+		</div>
+
+		<script>
+		
+
+		function escrever(){
+			let imput = document.getElementById("escrever")
+			let paragrafo1 = document.getElementById("paragrafo1")
+			paragrafo1.innerText = imput.value
+		}
+
+		function cor(cor){
+			cor.style.color = "red"
+		}
+
+		function saidacor(saidadacor){
+		saidadacor.style.color = " black"
+		}
+
+		function claro(){
+			let cordobody = document.getElementsByTagName("body")[0]
+			cordobody.style.backgroundColor = "#93DAF4" 
+			
+		}
+
+		function escuro(){
+			let bodyescuro = document.getElementsByTagName("body")[0]
+			bodyescuro.style.backgroundColor = "#1D2C34"
+		}
+
+		function novo(){
+			let novo = document.getElementById("image")
+			novo.addEventListener("click", sair)
+
+		}
+		function sair(){
+			novo.innerHTML.style = "iframe{display: none;}"
+		}
+	</script>
+
+	
+
+	</body>
+	</html>
